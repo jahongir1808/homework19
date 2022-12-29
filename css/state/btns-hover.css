@@ -1,0 +1,11 @@
+.nav-btn:hover {
+  background-color: #ffffff;
+  color: #002529;
+}
+.nav-menus-link:hover {
+  color: var(--nav-link-hover);
+}
+.footer__btn:hover {
+  background: #012f34;
+  color: white;
+}

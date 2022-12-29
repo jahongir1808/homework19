@@ -1,0 +1,3 @@
+.meet__card:hover {
+  background-color: var(--card-hover-bg);
+}

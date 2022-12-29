@@ -1,0 +1,12 @@
+:root {
+  font-size: 18px;
+  --nav-link-hover: #f67e7e;
+  --page-heading-color: #ffffff;
+  --card-heading-color: #f67e7e;
+  --card-bg: #012f34;
+  --card-hover-bg: #002529;
+  --card-btn-bg: #f67e7e;
+  --card-btn-hover: #79c8c7;
+  --btn-border-color: #012f34;
+  --footer-bg: #002529;
+}

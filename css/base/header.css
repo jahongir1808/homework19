@@ -1,0 +1,268 @@
+@import "../state/btns-hover.css";
+@import "../theme/heading-color.css";
+
+/* NAVBAR */
+body #header {
+  background-image: url(../../images/home-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  background: #014e56;
+  padding: 73px 0 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+  background-color: #002529;
+  z-index: 999999999999;
+  padding: 50px 0 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-img {
+  display: flex;
+}
+.nav-menus {
+  margin-left: 80px;
+}
+
+.nav-menus ul {
+  gap: 40px;
+}
+
+.nav-menus-link {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 28px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.nav-menus {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menus ul {
+  display: flex;
+}
+
+.nav-btn {
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 28px;
+  color: #ffffff;
+  background: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.hamburger {
+  display: none;
+}
+
+#navbar-responsive {
+  display: none;
+}
+
+/* HOME */
+
+.home__container {
+  padding: 200px 0 250px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.border {
+  width: 50px;
+  height: 4px;
+  background: #79c8c7;
+}
+
+.home__left-title {
+  max-width: 600px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.55rem;
+  line-height: 100px;
+}
+
+.home__left-span {
+  color: #f67e7e;
+}
+
+.home__right-text {
+  max-width: 445px;
+  margin-top: 79px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .home__container {
+    display: grid;
+    justify-content: center;
+  }
+  .home__left-title {
+    padding: 60px 0 18px;
+    max-width: 350px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 3.5rem;
+  }
+
+  .home__left-span {
+    color: #f67e7e;
+  }
+  .home__left-border {
+    display: none;
+  }
+
+  .home__right-text {
+    text-align: center;
+    max-width: 327px;
+    font-size: 0.83rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-logo-img img {
+    width: 127px;
+    height: 32px;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  .nav-menus {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  #navbar-responsive {
+    position: absolute;
+    background-image: url(../../images/responsive-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100 200;
+    display: block;
+    top: 0;
+    z-index: 2;
+    right: -100%;
+    width: 100%;
+    transition: 1s;
+  }
+  #navbar-responsive .nav-link {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 30px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #navbar-responsive .nav-menus-link:hover {
+    color: #f67e7e;
+    transition: 0.5s;
+  }
+  #navbar-responsive .nav-btn:hover {
+    border: 1px solid #fac422;
+  }
+  #navbar-responsive ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    margin-top: 100px;
+    height: 100vh;
+    list-style-type: none;
+  }
+  .hamburger i {
+    width: 20px;
+    height: 17px;
+    color: white;
+  }
+  #close-navbar {
+    position: absolute;
+    top: 57px;
+    left: 180px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #close-navbar i {
+    width: 18px;
+    height: 17px;
+    color: white;
+  }
+  .nav__responsive-btn {
+    display: block;
+    margin-top: 39px;
+    max-width: 159px;
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #ffffff;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+  }
+  .nav__responsive-btn:hover {
+    background-color: #ffffff;
+    color: #002529;
+  }
+
+  #header {
+    background-position: left;
+  }
+  .home__container {
+    margin-top: 80px;
+  }
+
+  .home__left-title {
+    max-width: 327px;
+    text-align: center;
+    font-size: 2.66rem;
+    line-height: 40px;
+    padding: 60px 0 18px;
+  }
+
+  .home__left-span {
+    color: #f67e7e;
+  }
+
+  .home__right-text {
+    text-align: center;
+    max-width: 327px;
+    font-size: 0.83rem;
+  }
+}

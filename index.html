@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Team Multi Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout/home.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <div class="container nav-container">
+          <div class="nav-logo-img">
+            <a href="#"><img src="images/nav-logo.svg" alt="" /></a>
+            <div class="nav-menus">
+              <ul>
+                <li><a class="nav-menus-link" href="#">home</a></li>
+                <li>
+                  <a class="nav-menus-link" href="about.html">about</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-btn">
+            <a class="nav-btn btn" href="contact.html">contact us</a>
+          </div>
+          <button class="hamburger" onclick="openNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div id="navbar-responsive">
+          <ul>
+            <li><a class="nav-menus-link" href="#">home</a></li>
+            <li>
+              <a class="nav-menus-link" href="about.html">about</a>
+            </li>
+            <li>
+              <a class="nav__responsive-btn btn" href="contact.html"
+                >contact us</a
+              >
+            </li>
+          </ul>
+          <button id="close-navbar" onclick="closeNavbar()">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="home">
+        <div class="container home__container">
+          <div class="home__left">
+            <h1 class="home__left-title">
+              Find the best <span class="home__left-span">talent</span>
+            </h1>
+          </div>
+          <div class="home__right">
+            <div class="border"></div>
+            <div class="home__right-text">
+              <p>
+                Finding the right people and building high performing teams can
+                be hard. Most companies aren’t tapping into the abundance of
+                global talent. We’re about to change that.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="build">
+      <div class="container build__container">
+        <div class="build__left">
+          <div class="border border__red"></div>
+          <h2 class="build__left-title">
+            Build & manage distributed teams like no one else.
+          </h2>
+        </div>
+        <div class="build__right">
+          <div class="build__right-card">
+            <div class="build__card-img">
+              <img src="images/build-icon1.svg" alt="" />
+            </div>
+            <div class="build__card-content">
+              <h4 class="build__card-title">Experienced Individuals</h4>
+              <p class="build__card-text">
+                Our network is made up of highly experienced professionals who
+                are passionate about what they do.
+              </p>
+            </div>
+          </div>
+          <div class="build__right-card">
+            <div class="build__card-img">
+              <img src="images/build-icon2.svg" alt="" />
+            </div>
+            <div class="build__card-content">
+              <h4 class="build__card-title">Easy to Implement Individuals</h4>
+              <p class="build__card-text">
+                Our processes have been refined over years of implementation
+                meaning our teams always deliver.
+              </p>
+            </div>
+          </div>
+          <div class="build__right-card">
+            <div class="build__card-img">
+              <img src="images/build-icon3.svg" alt="" />
+            </div>
+            <div class="build__card-content">
+              <h4 class="build__card-title">Enhanced Productivity</h4>
+              <p class="build__card-text">
+                Our customized platform with in-built analytics helps you manage
+                your distributed teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="stories">
+      <div class="container stories__container">
+        <div class="stories__top">
+          <h2 class="stories__top-title">
+            Delivering real results for top companies. Some of our<span
+              class="stories__top-span"
+              >success stories.</span
+            >
+          </h2>
+        </div>
+        <div class="stories__bottom-cards">
+          <div class="stories__bottom-card">
+            <img
+              class="stories__bottom-icon"
+              src="images/stories-bt-icon.svg"
+              alt=""
+            />
+            <p class="stories__bottom-text">
+              “The team perfectly fit the specialized skill set required. They
+              focused on the most essential features helping us launch the
+              platform eight months faster than planned.”
+            </p>
+            <h5 class="stories__bottom-title">Kady Baker</h5>
+            <p class="stories__bottom-txt">Product Manager at Bookmark</p>
+            <div class="stories__bottom-img">
+              <img src="images/stories-img1.png" alt="" />
+            </div>
+          </div>
+          <div class="stories__bottom-card">
+            <img
+              class="stories__bottom-icon"
+              src="images/stories-bt-icon.svg"
+              alt=""
+            />
+            <p class="stories__bottom-text">
+              “We needed to automate our entire onboarding process. The team
+              came in and built out the whole journey. Since going live, user
+              retention has gone through the roof!”
+            </p>
+            <h5 class="stories__bottom-title">Aiysha Reese</h5>
+            <p class="stories__bottom-txt">Founder of Manage</p>
+            <div class="stories__bottom-img">
+              <img src="images/stories-img2.png" alt="" />
+            </div>
+          </div>
+          <div class="stories__bottom-card">
+            <img
+              class="stories__bottom-icon"
+              src="images/stories-bt-icon.svg"
+              alt=""
+            />
+            <p class="stories__bottom-text">
+              “Amazing. Our team helped us build an app that delivered a new
+              experience for hiring a physio. The launch was an instant success
+              with 100k downloads in the first month.”
+            </p>
+            <h5 class="stories__bottom-title">Arthur Clarke</h5>
+            <p class="stories__bottom-txt">Co-founder of MyPhysio</p>
+            <div class="stories__bottom-img">
+              <img src="images/stories-img3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section id="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <h2 class="footer__top-title">Ready to get started?</h2>
+            <a href="#" class="btn footer__btn">contact us</a>
+          </div>
+        </div>
+      </section>
+      <section id="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-container">
+            <div class="footer__bottom-start">
+              <div class="footer-logo">
+                <img src="images/nav-logo.svg" alt="" />
+                <ul>
+                  <li><a class="nav-menus-link" href="#">home</a></li>
+                  <li>
+                    <a class="nav-menus-link" href="blog.html">about</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__bottom-links">
+                <span>987 Hillcrest Lane</span>
+                <span>Irvine, CA</span>
+                <span>California 92714</span>
+                <span>Call Us:949-833-7432</span>
+              </div>
+            </div>
+            <div class="footer__bottom-right">
+              <div class="bottom__right-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <p class="footer__bottom-text">
+                Copyright 2020. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

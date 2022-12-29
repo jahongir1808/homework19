@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout/about.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <div class="nav-logo-img">
+            <a href="index.html"><img src="images/nav-logo.svg" alt="" /></a>
+            <div class="nav-menus">
+              <ul>
+                <li><a class="nav-menus-link" href="index.html">home</a></li>
+                <li>
+                  <a class="nav-menus-link" href="#">about</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-btn">
+            <a class="nav-btn btn" href="contact.html">contact us</a>
+          </div>
+          <button class="hamburger" onclick="openNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-responsive">
+        <ul>
+          <li><a class="nav-menus-link" href="#">home</a></li>
+          <li>
+            <a class="nav-menus-link" href="about.html">about</a>
+          </li>
+          <li>
+            <a class="nav__responsive-btn btn" href="contact.html"
+              >contact us</a
+            >
+          </li>
+        </ul>
+        <button id="close-navbar" onclick="closeNavbar()">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </nav>
+    <header id="header">
+      <div id="home">
+        <div class="container">
+          <div class="home__container">
+            <div class="home__left">
+              <h1 class="home__left-title">About</h1>
+            </div>
+            <div class="home__right">
+              <div class="border border__pink"></div>
+              <div class="home__right-text">
+                <p class="home__right-content">
+                  We help companies build dynamic teams made up of top global
+                  talent. Using our network of passionate professionals we drive
+                  innovation and deliver incredible outcomes. Talented, diverse
+                  teams shape the best products and experiences. We’ll bring
+                  those teams to you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="meet">
+      <div class="container">
+        <div class="meet__container">
+          <div class="meet__title">
+            <h2 class="meet__title-text">Meet the directors</h2>
+          </div>
+          <div class="meet__cards">
+            <div class="meet__card">
+              <img src="images/meet-img1.png" alt="" />
+              <h4 class="meet__card-title">Nikita Marks</h4>
+              <p class="meet__card-text">Founder & CEO</p>
+              <button class="meet__card-button">+</button>
+            </div>
+            <div class="meet__card">
+              <img src="images/meet-img2.png" alt="" />
+              <h4 class="meet__card-title">Cristian Duncan</h4>
+              <p class="meet__card-text">Co-founder & COO</p>
+              <button class="meet__card-button">+</button>
+            </div>
+            <div class="meet__card">
+              <img src="images/meet-img3.png" alt="" />
+              <h4 class="meet__card-title">Cruz Hamer</h4>
+              <p class="meet__card-text">Co-founder & CTO</p>
+              <button class="meet__card-button">+</button>
+            </div>
+            <div class="meet__card">
+              <img src="images/meet-img4.png" alt="" />
+              <h4 class="meet__card-title">Drake Heaton</h4>
+              <p class="meet__card-text">Business Development Lead</p>
+              <button class="meet__card-button">+</button>
+            </div>
+            <div class="meet__card">
+              <img src="images/meet-img5.png" alt="" />
+              <h4 class="meet__card-title">Griffin Wise</h4>
+              <p class="meet__card-text">Lead Marketing</p>
+              <button class="meet__card-button">+</button>
+            </div>
+            <div class="meet__card">
+              <h4 class="meet__card-title">Aden Allan</h4>
+              <p class="meet__card-txt">
+                “Empowered teams create truly amazing products. Set the north
+                star and let them follow it.”
+              </p>
+              <div class="meet__card-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <button class="meet__card-button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients">
+      <div class="container">
+        <div class="clients__content">
+          <h3 class="clients__content-title">Some of our clients</h3>
+        </div>
+        <div class="clients__clints-img">
+          <img src="images/clients-img1.svg" alt="" />
+          <img src="images/clients-img2.svg" alt="" />
+          <img src="images/clients-img3.svg" alt="" />
+          <img src="images/clients-img4.svg" alt="" />
+          <img src="images/clients-img5.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section id="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <h2 class="footer__top-title">Ready to get started?</h2>
+            <a href="#" class="btn footer__btn">contact us</a>
+          </div>
+        </div>
+      </section>
+      <section id="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-container">
+            <div class="footer__bottom-start">
+              <div class="footer-logo">
+                <img src="images/nav-logo.svg" alt="" />
+                <ul>
+                  <li><a class="nav-menus-link" href="#">home</a></li>
+                  <li>
+                    <a class="nav-menus-link" href="blog.html">about</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__bottom-links">
+                <span>987 Hillcrest Lane</span>
+                <span>Irvine, CA</span>
+                <span>California 92714</span>
+                <span>Call Us:949-833-7432</span>
+              </div>
+            </div>
+            <div class="footer__bottom-right">
+              <div class="bottom__right-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <p class="footer__bottom-text">
+                Copyright 2020. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

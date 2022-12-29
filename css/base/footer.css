@@ -1,0 +1,144 @@
+@import "../state/btns-hover.css";
+
+#footer__top {
+  background-image: url(../../images/home-page-bg4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 0;
+}
+
+.footer__top-title {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.footer__btn {
+  max-width: 160px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 0.3s;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 24px;
+}
+
+#footer__bottom {
+  background-color: var(--footer-bg);
+}
+
+.footer__bottom-container {
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom-start {
+  display: flex;
+  gap: 125px;
+}
+
+.footer-logo {
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+.footer-logo ul {
+  display: flex;
+  gap: 40px;
+}
+
+.footer__bottom-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bottom-links span {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.footer__bottom-right {
+  display: grid;
+  grid-row-gap: 51px;
+}
+
+.bottom__right-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+
+.bottom__right-icons i {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bottom__right-icons i:hover {
+  color: #f67e7e;
+}
+
+.footer__bottom-text {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .footer__bottom-container {
+    flex-direction: column;
+  }
+  .footer__bottom-start {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__bottom-links span {
+    text-align: right;
+  }
+  .footer__bottom-right {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__top-title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .footer__bottom-start {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer__bottom-links span {
+    text-align: center;
+  }
+  .footer__bottom-right {
+    gap: 16px;
+    flex-direction: column;
+  }
+}

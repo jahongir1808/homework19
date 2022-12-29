@@ -1,0 +1,204 @@
+@import "../state/about-card-hover.css";
+
+.home__container {
+  display: flex;
+  gap: 80px;
+}
+
+.border__pink {
+  background-color: #f67e7e;
+}
+
+.home__right-content {
+  width: 730px;
+}
+
+/* MEET */
+
+#meet {
+  background-image: url(../../images/about-page-bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meet__container {
+  padding: 140px 0;
+}
+
+.meet__title-text {
+  padding-bottom: 64px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.meet__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 76px 30px;
+}
+
+.meet__card {
+  position: relative;
+  text-align: center;
+  padding: 32px 48px 56px 48px;
+  background-color: var(--card-bg);
+  transition: 0.3s;
+}
+
+.meet__card-title {
+  margin-top: 16px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+}
+
+.meet__card-text {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.meet__card-txt {
+  margin: 8px 0 24px;
+  max-width: 254px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.meet__card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.meet__card-icons i {
+  color: white;
+  transition: 0.3s;
+}
+
+.meet__card-icons i:hover {
+  color: #f67e7e;
+}
+
+.meet__card-button {
+  position: absolute;
+  bottom: -28px;
+  left: 41%;
+  width: 56px;
+  height: 56px;
+  font-size: 30px;
+  background: #f67e7e;
+  color: #012f34;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s;
+}
+
+.meet__card-button:hover {
+  background: #79c8c7;
+}
+
+.meet__card-button:focus {
+  transform: rotate(135deg);
+}
+
+/* CLIENTS */
+
+#clients {
+  padding: 140px 0;
+  background-image: url(../../images/about-page-bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clients__content {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.clients__content-title {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.clients__clints-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home__container {
+    display: grid;
+    gap: 0;
+    justify-content: center;
+  }
+  .home__left-title {
+    padding: 60px 0 18px;
+    max-width: 327px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .home__right-text {
+    text-align: center;
+  }
+
+  .home__right-content {
+    max-width: 327px;
+    font-size: 15px;
+  }
+
+  .border__pink {
+    display: none;
+  }
+  .meet__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 76px 11px;
+  }
+  .clients__clints-img {
+    gap: 45px;
+  }
+  .clients__clints-img img {
+    width: 110px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .meet__cards {
+    grid-template-columns: 1fr;
+    grid-gap: 76px 11px;
+  }
+  .clients__content {
+    width: 100%;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  .clients__content-title {
+    max-width: 327px;
+    font-size: 30px;
+  }
+  .clients__clints-img {
+    flex-direction: column;
+    grid-area: 56px;
+  }
+}
