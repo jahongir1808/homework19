@@ -85,8 +85,13 @@ input[type="email"] {
   letter-spacing: -0.115385px;
   color: rgb(255, 255, 255, 0.6);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  color: #ffffff;
   transition: 0.3s;
+}
+
+.contact__right-inputs form input[type="email"]:focus {
+  border-bottom: 2px solid #f67e7e;
+  color: #f67e7e;
 }
 
 textarea {
@@ -99,7 +104,7 @@ textarea {
   letter-spacing: -0.115385px;
   color: rgb(255, 255, 255, 0.6);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  color: #ffffff;
 }
 
 .submit button {
