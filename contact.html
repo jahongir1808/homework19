@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout/contact.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <div class="nav-logo-img">
+            <a href="index.html"><img src="images/nav-logo.svg" alt="" /></a>
+            <div class="nav-menus">
+              <ul>
+                <li><a class="nav-menus-link" href="index.html">home</a></li>
+                <li>
+                  <a class="nav-menus-link" href="about.html">about</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-btn">
+            <a class="nav-btn btn" href="contact.html">contact us</a>
+          </div>
+          <button class="hamburger" onclick="openNavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-responsive">
+        <ul>
+          <li><a class="nav-menus-link" href="index.html">home</a></li>
+          <li>
+            <a class="nav-menus-link" href="about.html">about</a>
+          </li>
+          <li>
+            <a class="nav__responsive-btn btn" href="contact.html"
+              >contact us</a
+            >
+          </li>
+        </ul>
+        <button id="close-navbar" onclick="closeNavbar()">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <h2 class="contact__left-heading">Contact</h2>
+            <h4 class="contact__left-title">Ask us about</h4>
+            <div class="contact__left-icons">
+              <div class="contact__left-icon">
+                <img src="images/build-icon1.svg" alt="" />
+                <p class="left__icon-text">The quality of our talent network</p>
+              </div>
+              <div class="contact__left-icon">
+                <img src="images/build-icon2.svg" alt="" />
+                <p class="left__icon-text">The quality of our talent network</p>
+              </div>
+              <div class="contact__left-icon">
+                <img src="images/build-icon3.svg" alt="" />
+                <p class="left__icon-text">The quality of our talent network</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__right">
+            <div class="contact__right-inputs">
+              <form>
+                <input required placeholder="Name" type="text" />
+                <input required placeholder="Email Address" type="email" />
+                <input required placeholder="Company Name" type="text" />
+                <input required placeholder="Title" type="text" />
+                <textarea required placeholder="Message"></textarea>
+                <div class="submit">
+                  <button type="submit">submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <section id="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-container">
+            <div class="footer__bottom-start">
+              <div class="footer-logo">
+                <img src="images/nav-logo.svg" alt="" />
+                <ul>
+                  <li><a class="nav-menus-link" href="index.html">home</a></li>
+                  <li>
+                    <a class="nav-menus-link" href="about.html">about</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__bottom-links">
+                <span>987 Hillcrest Lane</span>
+                <span>Irvine, CA</span>
+                <span>California 92714</span>
+                <span>Call Us:949-833-7432</span>
+              </div>
+            </div>
+            <div class="footer__bottom-right">
+              <div class="bottom__right-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <p class="footer__bottom-text">
+                Copyright 2020. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

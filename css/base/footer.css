@@ -141,4 +141,7 @@
     gap: 16px;
     flex-direction: column;
   }
+  .footer__bottom-text {
+    text-align: center;
+  }
 }

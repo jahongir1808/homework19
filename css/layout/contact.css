@@ -1,0 +1,143 @@
+@import "../state/btns-hover.css";
+@import "../theme/heading-color.css";
+
+header {
+  padding: 250px 0 120px;
+  background-image: url(../../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+}
+
+.contact__left-heading {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+}
+
+.contact__left-title {
+  padding-top: 16px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.contact__left-icons {
+  margin-top: 32px;
+}
+
+.contact__left-icon {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.left__icon-text {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.contact__right-inputs form {
+  display: grid;
+  grid-row-gap: 38px;
+}
+
+input,
+textarea {
+  padding: 0 0 16px 14px;
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffffff;
+}
+
+.contact__right-inputs form input:focus {
+  border-bottom: 2px solid #79c8c7;
+}
+
+.contact__right-inputs form textarea:focus {
+  border-bottom: 2px solid #79c8c7;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: rgb(255, 255, 255, 0.6);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+textarea {
+  padding: 0 0 58px 14px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: rgb(255, 255, 255, 0.6);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.submit button {
+  padding: 11px 32px;
+  margin-top: 24px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #004047;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-row-gap: 80px;
+  }
+  .contact__left-heading {
+    text-align: center;
+  }
+  .contact__left-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    grid-row-gap: 64px;
+  }
+  .contact__left-heading {
+    font-size: 40px;
+  }
+  .contact__left-title {
+    font-size: 32px;
+  }
+}
