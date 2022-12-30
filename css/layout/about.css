@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .meet__cards {
     grid-template-columns: 1fr;
     grid-gap: 76px 11px;

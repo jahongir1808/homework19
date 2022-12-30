@@ -147,7 +147,7 @@ nav {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .nav-logo-img img {
     width: 127px;
     height: 32px;
