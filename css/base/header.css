@@ -175,7 +175,7 @@ nav {
     z-index: 2;
     right: -100%;
     width: 100%;
-    transition: 1s;
+    transition: 0.5s;
   }
   #navbar-responsive .nav-link {
     display: inline-block;
