@@ -137,6 +137,11 @@
     max-width: 573px;
     font-size: 32px;
   }
+  .stories__bottom-card-icon {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
   .stories__bottom-cards {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -151,7 +156,7 @@
     max-width: 573px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .build__right-card {
     align-items: center;
     text-align: center;
